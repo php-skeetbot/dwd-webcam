@@ -22,3 +22,4 @@ phpstan.neon
 
 .config/*
 !.config/.env_example
+!.config/cacert.pem

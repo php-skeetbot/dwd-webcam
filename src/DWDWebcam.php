@@ -76,6 +76,9 @@ class DWDWebcam extends SkeetBot{
 		File::saveJSON($this->options->dataDir.'/last_updated.json', $this->lastUpdated);
 	}
 
+	/**
+	 * Posts the skeet
+	 */
 	public function post():static{
 
 		$body = [
