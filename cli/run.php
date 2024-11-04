@@ -10,8 +10,8 @@
 declare(strict_types=1);
 
 use chillerlan\DotEnv\DotEnv;
-use PHPSkeetBot\MySkeetBot\MySkeetBot;
-use PHPSkeetBot\MySkeetBot\MySkeetBotOptions;
+use PHPSkeetBot\DWDWebcamBot\DWDWebcam;
+use PHPSkeetBot\DWDWebcamBot\DWDWebcamOptions;
 use Psr\Log\LogLevel;
 
 ini_set('date.timezone', 'UTC');
@@ -27,12 +27,12 @@ if(!isset($_SERVER['GITHUB_ACTIONS'])){
 
 
 // invoke the options instance
-$options = new MySkeetBotOptions;
+$options = new DWDWebcamOptions;
 
 // HTTPOptions
-$options->ca_info        = realpath(__DIR__.'/../.config/cacert.pem'); // https://curl.haxx.se/ca/cacert.pem
+$options->ca_info        = realpath(__DIR__.'/../.config/cacert.pem'); // https://curl.se/ca/cacert.pem
 $options->user_agent     = 'phpSkeetBot/1.0 +https://github.com/php-skeetbot/php-skeetbot';
-$options->timeout        = 30; // we're being generous with the timeout here, botsin.space is sometimes slow to respond
+$options->timeout        = 30;
 $options->retries        = 3;
 
 // OAuthOptionsTrait
@@ -42,19 +42,21 @@ $options->retries        = 3;
 #$options->callbackURL    = getenv('BLUESKY_CALLBACK_URL');
 #$options->sessionStart   = true;
 
-
 // SkeetBotOptions
 // we can comment this for now as there's currently only one atproto instance
 #$options->instance       = getenv('BLUESKY_INSTANCE');
 $options->handle         = getenv('BLUESKY_HANDLE');
 $options->appPassword    = getenv('BLUESKY_APP_PW');
 $options->loglevel       = LogLevel::INFO;
-$options->buildDir       = __DIR__.'/../.build';
+#$options->buildDir       = __DIR__.'/../.build';
 $options->dataDir        = __DIR__.'/../data';
 
-#var_dump($options);
+// DWDWebcamOptions
+$options->imageSize      = '1920';
+$options->imageCount     = 4;
+
 // invoke the bot instance and post
-(new MySkeetBot($options))
+(new DWDWebcam($options))
 	->connect()
 	->post()
 ;

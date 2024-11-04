@@ -1,2 +1,31 @@
 parameters:
-	ignoreErrors: []
+	ignoreErrors:
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$uri\\.$#"
+			count: 1
+			path: src/DWDWebcam.php
+
+		-
+			message: "#^Cannot access property \\$message on mixed\\.$#"
+			count: 1
+			path: src/DWDWebcam.php
+
+		-
+			message: "#^Cannot access property \\$validationStatus on mixed\\.$#"
+			count: 1
+			path: src/DWDWebcam.php
+
+		-
+			message: "#^Method PHPSkeetBot\\\\DWDWebcamBot\\\\DWDWebcam\\:\\:getLatestImages\\(\\) should return array\\<int, array\\<string, string\\>\\> but returns array\\<int, array\\<string, array\\|string\\>\\>\\.$#"
+			count: 2
+			path: src/DWDWebcam.php
+
+		-
+			message: "#^Parameter \\#3 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/DWDWebcam.php
+
+		-
+			message: "#^Property PHPSkeetBot\\\\DWDWebcamBot\\\\DWDWebcam\\:\\:\\$lastUpdated \\(array\\<string, int\\>\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/DWDWebcam.php

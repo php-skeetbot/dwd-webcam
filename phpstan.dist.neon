@@ -14,4 +14,4 @@ includes:
 	- phpstan-baseline.neon
 	- vendor/phpstan/phpstan/conf/bleedingEdge.neon
 	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
-#	- vendor/chillerlan/php-settings-container/rules-magic-access.neon
+	- vendor/chillerlan/php-settings-container/rules-magic-access.neon

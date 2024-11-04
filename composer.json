@@ -1,10 +1,9 @@
 {
 	"$schema": "https://getcomposer.org/schema.json",
-	"name": "php-skeetbot/skeetbot-template",
-	"description": "A template library for Bluesky bots.",
+	"name": "php-skeetbot/dwd-webcam",
+	"description": "A bot that posts pictures from the German Weather Service (DWD) webcams.",
 	"license": "MIT",
 	"type": "project",
-	"keywords": ["bluesky", "bot", "skeet", "automation", "template"],
 	"authors": [
 		{
 			"name": "smiley",
@@ -13,7 +12,7 @@
 		},
 		{
 			"name": "Contributors",
-			"homepage":"https://github.com/php-skeetbot/skeetbot-template/graphs/contributors"
+			"homepage":"https://github.com/php-skeetbot/dwd-webcam/graphs/contributors"
 		}
 	],
 	"funding": [
@@ -22,10 +21,10 @@
 			"url": "https://ko-fi.com/codemasher"
 		}
 	],
-	"homepage": "https://github.com/php-skeetbot/skeetbot-template",
+	"homepage": "https://github.com/php-skeetbot/dwd-webcam",
 	"support": {
-		"issues": "https://github.com/php-skeetbot/skeetbot-template/issues",
-		"source": "https://github.com/php-skeetbot/skeetbot-template"
+		"issues": "https://github.com/php-skeetbot/dwd-webcam/issues",
+		"source": "https://github.com/php-skeetbot/dwd-webcam"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
@@ -47,12 +46,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"PHPSkeetBot\\MySkeetBot\\": "src"
+			"PHPSkeetBot\\DWDWebcamBot\\": "src"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"PHPSkeetBot\\MySkeetBotTest\\": "tests"
+			"PHPSkeetBot\\DWDWebcamBotTest\\": "tests"
 		}
 	},
 	"scripts": {
