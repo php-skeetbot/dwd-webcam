@@ -30,7 +30,7 @@ if(!isset($_SERVER['GITHUB_ACTIONS'])){
 $options = new DWDWebcamOptions;
 
 // HTTPOptions
-$options->ca_info        = realpath(__DIR__.'/../.config/cacert.pem'); // https://curl.se/ca/cacert.pem
+$options->ca_info        = realpath(__DIR__.'/cacert.pem'); // https://curl.se/ca/cacert.pem
 $options->user_agent     = 'phpSkeetBot/1.0 +https://github.com/php-skeetbot/php-skeetbot';
 $options->timeout        = 30;
 $options->retries        = 3;
