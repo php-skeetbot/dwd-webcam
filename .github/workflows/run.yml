@@ -1,9 +1,9 @@
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 
 on:
-#  push:
-#    branches:
-#      - main
+  push:
+    branches:
+      - main
   schedule:
     # POSIX cron syntax ("At minute 0 past every 3rd hour."), https://crontab.guru/#0_*/3_*_*_*
     - cron: "0 */3 * * *"
