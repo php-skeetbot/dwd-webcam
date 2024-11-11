@@ -1,12 +1,12 @@
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 
 on:
-  push:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
   schedule:
-    # POSIX cron syntax ("At minute 0 past every 3rd hour."), https://crontab.guru/#0_*/3_*_*_*
-    - cron: "0 */3 * * *"
+    # POSIX cron syntax ("At minute 0 past every 2nd hour."), https://crontab.guru/#0_*/2_*_*_*
+    - cron: "0 */2 * * *"
 
 name: "Run"
 
