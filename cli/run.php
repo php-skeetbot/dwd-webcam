@@ -10,6 +10,7 @@
 declare(strict_types=1);
 
 use chillerlan\DotEnv\DotEnv;
+use chillerlan\Utilities\File;
 use PHPSkeetBot\DWDWebcamBot\DWDWebcam;
 use PHPSkeetBot\DWDWebcamBot\DWDWebcamOptions;
 use Psr\Log\LogLevel;
@@ -25,26 +26,16 @@ if(!isset($_SERVER['GITHUB_ACTIONS'])){
 	(new DotEnv(__DIR__.'/../.config', '.env', true))->load();
 }
 
-
 // invoke the options instance
 $options = new DWDWebcamOptions;
 
 // HTTPOptions
-$options->ca_info        = realpath(__DIR__.'/cacert.pem'); // https://curl.se/ca/cacert.pem
+$options->ca_info        = File::realpath(__DIR__.'/cacert.pem'); // https://curl.se/ca/cacert.pem
 $options->user_agent     = 'phpSkeetBot/1.0 +https://github.com/php-skeetbot/php-skeetbot';
 $options->timeout        = 30;
 $options->retries        = 3;
 
-// OAuthOptionsTrait
-// these settings are only required for authentication/remote token acquisition
-#$options->key            = getenv('BLUESKY_KEY');
-#$options->secret         = getenv('BLUESKY_SECRET');
-#$options->callbackURL    = getenv('BLUESKY_CALLBACK_URL');
-#$options->sessionStart   = true;
-
 // SkeetBotOptions
-// we can comment this for now as there's currently only one atproto instance
-#$options->instance       = getenv('BLUESKY_INSTANCE');
 $options->handle         = getenv('BLUESKY_HANDLE');
 $options->appPassword    = getenv('BLUESKY_APP_PW');
 $options->loglevel       = LogLevel::INFO;
