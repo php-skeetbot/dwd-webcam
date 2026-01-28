@@ -26,7 +26,7 @@ A [Bluesky bot][bluesky-url] that posts pictures from the [German Weather servic
 - [DWD Offenbach](https://www.google.com/maps/place/Deutscher+Wetterdienst/@50.1019289,8.7429667,4365m/data=!3m1!1e3!4m6!3m5!1s0x47bd0e70c78fb01b:0x6223bc7a43506ad9!8m2!3d50.1026611!4d8.7479084!16s%2Fg%2F1pp2vbj9x!5m1!1e4?entry=ttu) - Ost, Blick nach Offenbach
 - DWD Offenbach - West, Blick nach Frankfurt
 - [Wetterstation Schmücke](https://www.google.com/maps/search/Wetterstation+Schm%C3%BCcke/@50.6531716,10.7717425,1414m/data=!3m1!1e3!5m1!1e4?entry=ttu) - Blick nach Südwest
-- ~~[Rostock-Warnemünde](https://www.google.com/maps/place/Deutscher+Wetterdienst+Ndl.+Rostock/@54.1798279,12.0784804,1086m/data=!3m1!1e3!4m14!1m7!3m6!1s0x47acf8a0eb65ee75:0x42549bc56943e71c!2sDeutscher+Wetterdienst+Ndl.+Rostock!8m2!3d54.1798248!4d12.0810607!16s%2Fg%2F1hc0v92bc!3m5!1s0x47acf8a0eb65ee75:0x42549bc56943e71c!8m2!3d54.1798248!4d12.0810607!16s%2Fg%2F1hc0v92bc!5m1!1e4?entry=ttu) - Blick nach Nordwest~~
+- [Rostock-Warnemünde](https://www.google.com/maps/place/Deutscher+Wetterdienst+Ndl.+Rostock/@54.1798279,12.0784804,1086m/data=!3m1!1e3!4m14!1m7!3m6!1s0x47acf8a0eb65ee75:0x42549bc56943e71c!2sDeutscher+Wetterdienst+Ndl.+Rostock!8m2!3d54.1798248!4d12.0810607!16s%2Fg%2F1hc0v92bc!3m5!1s0x47acf8a0eb65ee75:0x42549bc56943e71c!8m2!3d54.1798248!4d12.0810607!16s%2Fg%2F1hc0v92bc!5m1!1e4?entry=ttu) - Blick nach Nordwest
 - [Wetterstation Wasserkuppe, Rhön](https://www.google.com/maps/place/Wetterstation/@50.4977716,9.9394841,2360m/data=!3m1!1e3!4m6!3m5!1s0x47a33dda76b071f1:0x87091be68073a43e!8m2!3d50.497106!4d9.9426059!16s%2Fg%2F11h9zdbxgk!5m1!1e4?entry=ttu) - Blick nach Südwest
 
 ## related projects
