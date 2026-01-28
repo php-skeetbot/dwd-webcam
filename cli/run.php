@@ -32,7 +32,7 @@ $options = new DWDWebcamOptions;
 // HTTPOptions
 $options->ca_info        = File::realpath(__DIR__.'/cacert.pem'); // https://curl.se/ca/cacert.pem
 $options->user_agent     = 'phpSkeetBot/1.0 +https://github.com/php-skeetbot/php-skeetbot';
-$options->timeout        = 30;
+$options->timeout        = 100;
 $options->retries        = 3;
 
 // SkeetBotOptions

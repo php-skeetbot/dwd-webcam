@@ -48,7 +48,7 @@ class DWDWebcam extends SkeetBot{
 		'Offenbach-O'         => 'DWD Offenbach - Ost, Blick nach Offenbach',
 		'Offenbach-W'         => 'DWD Offenbach - West, Blick nach Frankfurt',
 		'Schmuecke-SW'        => 'Wetterstation Schmücke - Blick nach Südwest (Suhl)',
-		'Warnemuende-NW'      => 'Rostock-Warnemünde - Blick nach Nordwest', // offline
+		'Warnemuende-NW'      => 'Rostock-Warnemünde - Blick nach Nordwest',
 		'Wasserkuppe-SW'      => 'Wasserkuppe, Rhön - Blick nach Südwest',
 	];
 
