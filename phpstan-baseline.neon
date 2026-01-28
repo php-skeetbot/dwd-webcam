@@ -1,31 +1,109 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Access to an undefined property object\\:\\:\\$uri\\.$#"
+			rawMessage: Access to an undefined property object::$uri.
+			identifier: property.notFound
 			count: 1
 			path: src/DWDWebcam.php
 
 		-
-			message: "#^Cannot access property \\$message on mixed\\.$#"
+			rawMessage: Cannot access property $message on mixed.
+			identifier: property.nonObject
 			count: 1
 			path: src/DWDWebcam.php
 
 		-
-			message: "#^Cannot access property \\$validationStatus on mixed\\.$#"
+			rawMessage: Cannot access property $validationStatus on mixed.
+			identifier: property.nonObject
 			count: 1
 			path: src/DWDWebcam.php
 
 		-
-			message: "#^Method PHPSkeetBot\\\\DWDWebcamBot\\\\DWDWebcam\\:\\:getLatestImages\\(\\) should return array\\<int, array\\<string, string\\>\\> but returns array\\<int, array\\<string, array\\|string\\>\\>\\.$#"
+			rawMessage: 'Method PHPSkeetBot\DWDWebcamBot\DWDWebcam::getLatestImages() should return array<int, array<string, string>> but returns list<array<string, array|string>>.'
+			identifier: return.type
 			count: 2
 			path: src/DWDWebcam.php
 
 		-
-			message: "#^Parameter \\#3 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			rawMessage: 'Parameter #3 ...$values of function sprintf expects bool|float|int|string|null, mixed given.'
+			identifier: argument.type
 			count: 1
 			path: src/DWDWebcam.php
 
 		-
-			message: "#^Property PHPSkeetBot\\\\DWDWebcamBot\\\\DWDWebcam\\:\\:\\$lastUpdated \\(array\\<string, int\\>\\) does not accept mixed\\.$#"
+			rawMessage: 'Property PHPSkeetBot\DWDWebcamBot\DWDWebcam::$lastUpdated (array<string, int>) does not accept mixed.'
+			identifier: assign.propertyType
 			count: 1
 			path: src/DWDWebcam.php
+
+		-
+			rawMessage: Access to an undefined property object::$uri.
+			identifier: property.notFound
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: Cannot access offset 'created_at' on mixed.
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: Cannot access offset 'media_attachments' on mixed.
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: Cannot access property $message on mixed.
+			identifier: property.nonObject
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: Cannot access property $validationStatus on mixed.
+			identifier: property.nonObject
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: 'Method PHPSkeetBot\DWDWebcamBot\DWDWebcamImport::uploadImages() has parameter $media with no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: 'Method PHPSkeetBot\DWDWebcamBot\DWDWebcamImport::uploadImages() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: 'Parameter #1 $datetime of function strtotime expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: 'Parameter #1 $media of method PHPSkeetBot\DWDWebcamBot\DWDWebcamImport::uploadImages() expects array, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: 'Parameter #3 ...$values of function sprintf expects bool|float|int|string|null, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: 'Property PHPSkeetBot\DWDWebcamBot\DWDWebcamImport::$data (array<int, mixed>) does not accept mixed.'
+			identifier: assign.propertyType
+			count: 1
+			path: src/DWDWebcamImport.php
+
+		-
+			rawMessage: 'Property PHPSkeetBot\DWDWebcamBot\DWDWebcamImport::$imported (array<int, int>) does not accept mixed.'
+			identifier: assign.propertyType
+			count: 1
+			path: src/DWDWebcamImport.php
