@@ -29,7 +29,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
-		"php": "^8.2",
+		"php": "^8.4",
 		"chillerlan/php-dotenv": "^3.0",
 		"chillerlan/php-settings-container": "^3.2",
 		"php-skeetbot/php-skeetbot": "^1.0"
@@ -38,7 +38,7 @@
 		"phpmd/phpmd": "^2.15",
 		"phpstan/phpstan": "^2.1.37",
 		"phpstan/phpstan-deprecation-rules": "^2.0.3",
-		"phpunit/phpunit": "^11.5.50",
+		"phpunit/phpunit": "^12.5.8",
 		"slevomat/coding-standard": "^8.27",
 		"squizlabs/php_codesniffer": "^4.0"
 	},
@@ -55,7 +55,7 @@
 		}
 	},
 	"scripts": {
-		"phpcs": "@php vendor/bin/phpcs",
+		"phpcs": "@php vendor/bin/phpcs -v",
 		"phpstan": "@php vendor/bin/phpstan",
 		"phpstan-baseline": "@php vendor/bin/phpstan --generate-baseline",
 		"phpunit": "@php vendor/bin/phpunit"
